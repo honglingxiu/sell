@@ -7,7 +7,11 @@ import fastClick from 'fastclick'
 import "./assets/styles/css/reset.css"
 import "./assets/styles/css/border.css"
 import "./assets/styles/fonts/iconfont.css"
+import "./assets/styles/css/base.css"
+import Packages from "./pages/common/index.js"; //导入组件库
+import store from "./store"; //导入公共库
 
+Vue.use(Packages);
 Vue.config.productionTip = false
 fastClick.attach(document.body);
 
@@ -15,6 +19,7 @@ fastClick.attach(document.body);
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })

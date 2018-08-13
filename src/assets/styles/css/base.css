@@ -1,0 +1,52 @@
+@media only screen and (width: 320px){
+  html{
+    font-size: 16px;
+  }
+}
+@media only screen and (width: 360px){
+  html{
+    font-size: 18px;
+  }
+}
+@media only screen and (width: 375px){
+  html{
+    font-size: 18.75px;
+  }
+}
+@media only screen and (width: 400px){
+  html{
+    font-size: 20px;
+  }
+}
+@media only screen and (width: 412px){
+  html{
+    font-size: 20.6px;
+  }
+}
+@media only screen and (width: 414px){
+  html{
+    font-size: 20.7px;
+  }
+}
+@media only screen and (width: 640px){
+  html{
+    font-size: 32px;
+  }
+}
+.f-l{
+  float: left;
+}
+.f-r{
+  float: right;
+}
+.clearfix:after {
+  content:"";
+  height: 0;
+  visibility: hidden;
+  overflow: hidden;
+  dispaly: block;
+  clear: both;
+}
+.clearfix {
+  zoom: 1;/*IE678*/
+}

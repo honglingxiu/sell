@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style type="text/css">
+    .one{
+      width: 100px;
+      height: 100px;
+      /*background-color: red;*/
+      transition: all .5s cubic-bezier(0.49, -0.29, 0.75, 0.41) ;
+    }
+    .two{
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: green;
+      transition: all .5s  linear;
+    }
+    .four{
+      width: 100px;
+      height: 100px;
+      /*background-color: red;*/
+      transition: all .5s linear ;
+    }
+    .five{
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: red;
+      transition: all .4s  cubic-bezier(0.49, -0.29, 0.75, 0.41);
+    }
+  /*  .one:hover{
+      transform: translateY(200px);
+    }
+    .two:hover{
+      transform: translateX(200px);
+    }*/
+  </style>
+</head>
+<body>
+<div class="one" id="one">
+  <div class="two" id="two"></div>
+</div>
+<div class="four" id="four">
+  <div class="five" id="five"></div>
+</div>
+<button id="three">点击</button>
+</body>
+<script type="text/javascript">
+  var btn=document.getElementById("three");
+  var one=document.getElementById("one");
+  var four=document.getElementById("four");
+  var two=document.getElementById("two");
+  var five=document.getElementById("five");
+  btn.onclick=function () {
+    one.style.transform="translateY(200px)";
+    two.style.transform="translateX(200px)";
+    four.style.transform="translateX(200px)";
+    five.style.transform="translateY(200px)";
+
+  }
+  a={
+    name:"中过"
+  };
+  b={
+    name:"中国"
+  }
+  console.log(!(a.name == b.name));
+  console.log(window.location.hash);
+  console.log(window.location);
+</script>
+</html>
